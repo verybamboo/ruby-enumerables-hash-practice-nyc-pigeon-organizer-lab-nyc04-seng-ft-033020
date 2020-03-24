@@ -3,18 +3,18 @@ def nyc_pigeon_organizer(data)
   pigeon_hash = {}
   
   data.each do |key, value|
-    value.each do |new_value, names|
-      names.each do |name|
+    value.each do |new_value, pigeons|
+      pigeons.each do |pigeons|
         
-        if !new_hash[name]
-          new_hash[name] = {}
+        if !new_hash[pigeons]
+          new_hash[pigeons] = {}
         end
 
-        if !new_hash[name][key]
-          new_hash[name][key] = []
+        if !pigeon_hash[pigeons][key]
+          pigeon_hash[pigeons][key] = []
         end
 
-        new_hash[name][key] << new_value.to_s
+        pigeon_hash[pigeons][key] << new_value.to_s
 
       end
     end
