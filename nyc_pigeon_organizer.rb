@@ -6,8 +6,8 @@ def nyc_pigeon_organizer(data)
     value.each do |new_value, pigeons|
       pigeons.each do |pigeons|
         
-        if !new_hash[pigeons]
-          new_hash[pigeons] = {}
+        if !pigeon_hash[pigeons]
+          pigeon_hash[pigeons] = {}
         end
 
         if !pigeon_hash[pigeons][key]
