@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  def nyc_pigeon_organizer(data)
-  new_hash = {}
+  pigeon_hash = {}
+  
   data.each do |key, value|
     value.each do |new_value, names|
       names.each do |name|
@@ -20,5 +20,4 @@ def nyc_pigeon_organizer(data)
     end
   end
   new_hash
-end
 end
